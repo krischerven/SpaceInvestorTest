@@ -83,7 +83,10 @@ for row in results:
     ]
 
     for i in range(len(vals)):
-        vals[i] = "{}".format(row[vals[i]])
+        tmp = row[vals[i]]
+        if type(tmp) == bytes:
+            tmp = tmp.decode()
+        vals[i] = "{}".format(tmp)
     cursor.execute(sql, vals)
 
 database.commit()
