@@ -1,3 +1,28 @@
+# POJO Fields:
+
+'''
+planetName
+starName
+publicationStatus
+yearDiscovered
+mass
+massErrorMin
+massErrorMax
+radius
+radiusErrorMin
+radiusErrorMax
+period
+periodErrorMin
+periodErrorMax
+tempCalculated
+tempMeasured
+starDistance
+starDistanceErrorMin
+starDistanceErrorMax
+inclination
+inclinationErrorMin
+'''
+
 # rows we want
 COLUMNS = (
     "target_name",
